@@ -10,7 +10,7 @@ cask "yamaha-usb-midi-driver" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/USB-MIDI\sDriver\sV?(\d+(?:\.\d+)+)\sfor\sMac/i)
+    regex(/USB-MIDI\sDriver\sV?(\d+(?:\.\d+)+(?:-\d+)?)\sfor\sMac/i)
   end
 
   pkg "um#{version.no_dots}mx/Yamaha USB-MIDI Driver V#{version}.pkg"
